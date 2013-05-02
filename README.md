@@ -1,7 +1,12 @@
-##jQuery ToDo
-
+#jQuery ToDo
 
 by Paddy Duke
 
+---
 
+##About
 A simple ToDo list built using jQuery and jQueryUI.
+
+
+##License
+This work is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US "Creative Commons Attribution 3.0 Unported License").
