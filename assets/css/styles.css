@@ -1,0 +1,302 @@
+/*------------------------------------*\
+  RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE:WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+  display:block;
+}
+body{
+  line-height:1;
+}
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:'';
+  content:none;
+}
+/* remember to define visible focus styles!
+:focus{
+  outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+/* GO! */
+
+body {
+	background: #222222;
+	color: #ffffff;
+	text-shadow: 0px 1px 0px #000000;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	width: 97%;
+	margin: 10px 0 10px 3%;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+
+#toDoList {
+	margin: 0 0 10px 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#completeList {
+	margin: 0 0 60px 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+li {
+	width: 94%;
+	padding: 10px 3% 10px 3%;
+	margin: 1px 0 0 0;
+	font-size: inherit;
+	line-height: 39px;
+}
+	li:hover {
+		cursor: pointer;
+	}
+	
+.toDo {
+	background: #D00000;
+	text-decoration: none;
+}
+	.toDo:hover {
+		background: #D90000;
+	}
+
+.toDo:first-child {
+	background: #FCB000;
+}
+	.toDo:first-child:hover {
+		background: #FCB900;
+	}
+
+.toDo:nth-child(2) {
+	background: #FC9000;
+}
+	.toDo:nth-child(2):hover {
+		background: #FC9900;
+	}
+
+.toDo:nth-child(3) {
+	background: #FC7000;
+}
+	.toDo:nth-child(3):hover {
+		background: #FC7900;
+	}
+
+.toDo:nth-child(4) {
+	background: #EE5000;
+}
+	.toDo:nth-child(4):hover {
+		background: #EE5900;
+	}
+
+.toDo:nth-child(5) {
+	background: #E02000;
+}
+	.toDo:nth-child(5):hover {
+		background: #E02900;
+	}
+	
+.notEasy {
+	background: #45c716;
+}
+
+.youCompleteMe {
+	text-decoration: line-through;
+	text-shadow: none;
+	background: #333333;
+	color: #666666;
+}
+	.youCompleteMe:hover {
+		background: #383838;
+	}
+	
+.johnKruger {
+	display: block;
+	float: right;
+	padding: 10px;
+	margin: -10px;
+	text-decoration: none;
+	color: #883333;
+	font-size: 1.5em;
+}
+	.johnKruger:hover {
+		color: #ee0000;
+	}
+	
+	
+	
+
+form {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+input {
+	width: 70%;
+	height: 40px;
+	padding: 10px 3% 10px 3%;
+	border: none;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+}
+
+.emptyBox {
+	width: 69.6% !important;
+	height: 32px !important;
+	border: 4px solid #de1919 !important;
+}
+
+button {
+	width: 24%;
+	height: 60px;
+	padding: 10px 3% 10px 3%;
+	border: none;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	background: #14cfaa;
+	color: #fafafa;
+	float: right;
+	position: absolute;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: inherit;
+}
+	button:hover {
+		background: #10eabe;
+		cursor: pointer;
+	}
+
+/*
+.youCompleteMe {
+	width: 20.8%;
+	height: 39px;
+	float: right;
+	background: #14cfaa;
+	padding: 18px 1% 2px 3%;
+	margin: -59px 0 0 0;
+}
+	.youCompleteMe:hover {
+		background: #10eabe;
+		cursor: pointer;
+	}
+*/
+	
+.farOut {
+	margin-right: -25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
